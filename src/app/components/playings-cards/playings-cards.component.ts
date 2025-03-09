@@ -10,5 +10,9 @@ import { Component,Input } from '@angular/core';
 })
 export class PlayingsCardsComponent {
   // consume object
-  @Input() shadow: Shadow = new Shadow;
+  @Input() shadow: Shadow = new Shadow();
+
+  constructor(){
+
+  }
 }
