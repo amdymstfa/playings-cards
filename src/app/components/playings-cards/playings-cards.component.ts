@@ -1,5 +1,5 @@
 import { Shadow } from './../../models/shadow.model';
-import { Component,Input } from '@angular/core';
+import { Component,input,Input, InputSignal } from '@angular/core';
 
 @Component({
   selector: 'app-playings-cards',
@@ -10,9 +10,6 @@ import { Component,Input } from '@angular/core';
 })
 export class PlayingsCardsComponent {
   // consume object
-  @Input() shadow: Shadow = new Shadow();
-
-  constructor(){
-
-  }
+  // @Input() shadow: Shadow = new Shadow();
+  shadow: InputSignal<Shadow> = input(new Shadow());
 }
