@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+    font-family: sans-serif;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(198, 16, 171), black);
+    transition: background 0.5s ease-in-out;
+}

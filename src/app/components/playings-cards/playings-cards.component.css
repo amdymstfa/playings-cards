@@ -1,0 +1,106 @@
+#card {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 gray;
+    background-color: rgb(221, 211, 221);
+}
+
+#inside {
+    padding: 5px;
+    background-color: #850606;
+}
+
+.cost {
+    width: 20px;
+    height: 20px;
+}
+
+.icon{
+    display: flex;
+    gap: 1px;
+    .cost{
+    background-color: yellow;
+    }
+}
+
+header{
+    display: flex;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    .left, .right{
+        display: flex;
+        width: 50%;
+        align-items: center;
+    }
+
+    .right{
+        flex-direction: row;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .right #hp {
+        vertical-align: middle;
+    }
+}
+
+figure#shadow{
+    margin: 0;
+    padding: 5px 5px 0 5px;
+    width: calc(100% - 10px);
+    background-color: lightgray;
+
+
+    img{
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+    }
+
+    figcaption {
+        text-align: center;
+        font-size: smaller;
+    }
+
+    #capacities{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        padding: 0;
+        margin: 0;
+        
+        .capacity {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+
+            .main {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                font-weight: bold;
+                margin-top: 5px;
+
+
+                .name{
+                    flex-grow: 1;
+                }
+
+                .cost{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                }
+            }
+            .description{
+                font-size: small;
+            }
+        }
+    }
+}
