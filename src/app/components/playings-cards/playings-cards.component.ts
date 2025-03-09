@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Shadow } from './../../models/shadow.model';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-playings-cards',
@@ -8,9 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './playings-cards.component.css'
 })
 export class PlayingsCardsComponent {
-  name: string = 'Igris Sl';
-  hp: number = 50 ;
-  rank: string = 'Boss';
-  power: number = 90 ;
-  description: string = 'white eyes and a shiny armored red body';
+  // consume object
+  @Input() shadow: Shadow = new Shadow;
 }
