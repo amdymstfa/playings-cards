@@ -9,5 +9,5 @@ export class Shadow  {
     rank: string = 'Boss';
     power: number = 90 ;
     description: string = 'white eyes and a shiny armored red body';
-    img: string = '/assets/img/Igris.webp';
+    image: string = '/assets/img/Igris.webp';
 }
