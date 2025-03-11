@@ -15,6 +15,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 })
 export class AppComponent {
   shadow1!: Shadow;
+  count: number = 0;
+  search = '';
 
   constructor(){
     this.shadow1 = new Shadow();
@@ -26,8 +28,7 @@ export class AppComponent {
     this.shadow1.image = '/assets/img/Iron.webp';
   }
 
-  count: number = 0 ;
-  increaseCount(){
+  onClick(){
     this.count++;
   }
 }

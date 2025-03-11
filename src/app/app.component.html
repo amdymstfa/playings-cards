@@ -1,5 +1,6 @@
-<app-search-bar (seachBouton)="increaseCount()" />
-count : {{count}}
+<app-search-bar (searchButton)="onClick()"  [(search)] = "search"/>
+count : {{count}} <br/>
+search : {{search}}
 <div class="cards-list">
     <app-playings-cards/>
     <app-playings-cards [shadow]="shadow1" />
