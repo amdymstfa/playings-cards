@@ -1,7 +1,14 @@
-<app-search-bar (searchButton)="onClick()"  [(search)] = "search"/>
-count : {{count}} <br/>
+<!-- <app-search-bar (searchButton)="onClick()"  [(search)] = "search"/>
+<div >
+    count : {{count}} <br/>
 search : {{search}}
+</div>
 <div class="cards-list">
     <app-playings-cards/>
     <app-playings-cards [shadow]="shadow1" />
+</div> -->
+<button (click)="toggleShadow()" >Toggle shadow</button>
+
+<div id="class-list">
+    <app-playings-cards [shadow]="shadows[selectedShadowIndex]" />
 </div>

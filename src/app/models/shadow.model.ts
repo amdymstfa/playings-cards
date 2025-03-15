@@ -4,10 +4,11 @@ export class Shadow  {
     // power!: number;
     // hp!: number ;
     // rank!: string ;
-    name: string = 'Igris Sl';
-    hp: number = 50 ;
-    rank: string = 'Boss';
-    power: number = 90 ;
-    description: string = 'white eyes and a shiny armored red body';
-    image: string = '/assets/img/Igris.webp';
+    name!: string ;
+    hp!: number  ;
+    rank!: string;
+    power!: number;
+    description!: string;
+    image!: string ;
+    color!: string;
 }

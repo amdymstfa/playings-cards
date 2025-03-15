@@ -11,5 +11,6 @@ import { Component,input,Input, InputSignal } from '@angular/core';
 export class PlayingsCardsComponent {
   // consume object
   // @Input() shadow: Shadow = new Shadow();
-  shadow: InputSignal<Shadow> = input(new Shadow());
+  // shadow: InputSignal<Shadow> = input(new Shadow());
+  @Input() shadow: Shadow = new Shadow();
 }

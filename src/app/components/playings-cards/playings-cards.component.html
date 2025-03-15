@@ -2,15 +2,15 @@
     <div id="inside">
         <header>
             <div class="left">
-                <div id="name">{{shadow().name}}</div>
+                <div id="name">{{shadow.name}}</div>
             </div>
             <div class="right">
-                <div id="hp"> {{shadow().hp}} HP</div>
+                <div id="hp"> {{shadow.hp}} HP</div>
             </div>
         </header>
         <figure id="shadow">
-            <img [src]=shadow().image [alt]=shadow().name>
-            <figcaption>RanK : {{shadow().rank}} </figcaption>
+            <img [src]=shadow.image [alt]=shadow.name>
+            <figcaption>RanK : {{shadow.rank}} </figcaption>
             <div id="capacities">
                 <div class="capacity">
                     <div class="main">
@@ -26,11 +26,11 @@
                             </svg>
                         </div>
                        </div>
-                        <div class="name">{{shadow().name}}</div>
-                        <div class="power">{{shadow().power}}</div>
+                        <div class="name">{{shadow.name}}</div>
+                        <div class="power">{{shadow.power}}</div>
                     </div>
                     <div class="descritpion">
-                        {{shadow().description}}
+                        {{shadow.description}}
                     </div>
                 </div>
             </div>
